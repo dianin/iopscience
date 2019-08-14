@@ -3,11 +3,11 @@
 <suite name="Default Suite">
     <test name="home">
         <classes>
-            <class name="Tests.Test_Authorization">
+            <class name="Tests.Test_MainPage">
                 <methods>
                     <include name="LogInWithNegativeCasesPass"/>
                 </methods>
-            </class> <!-- Tests.Test_Authorization -->
+            </class> <!-- Tests.Test_MainPage -->
         </classes>
     </test> <!-- home -->
 </suite> <!-- Default Suite -->

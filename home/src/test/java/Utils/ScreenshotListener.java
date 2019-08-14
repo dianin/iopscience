@@ -7,14 +7,12 @@ import org.openqa.selenium.remote.Augmenter;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.TestListenerAdapter;
-
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 
 public class ScreenshotListener extends TestListenerAdapter {
-
 
     private void takeScreenshotToFile(WebDriver driver, File file) {
 
@@ -40,24 +38,11 @@ public class ScreenshotListener extends TestListenerAdapter {
         return createdFile;
     }
 
-
     @Override
     public void onTestFailure(ITestResult iTestResult) {
         try {
             ITestContext context = iTestResult.getTestContext();
             WebDriver driver = (WebDriver) context.getAttribute("driver");
-
-            // Try with reflection API
-/*      Class clazz = iTestResult.getTestClass().getRealClass();
-        Field field = null;
-        try {
-            field = clazz.getDeclaredField("driver");
-        } catch (NoSuchFieldException e) {
-            e.printStackTrace();
-        }
-        if (field != null) field.setAccessible(true);
-        WebDriver driver1 = (WebDriver)field.get(this);*/
-
             String screenshotDirectory = System.setProperty("screenshotDirectory", "target/screenshots");
             SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd'T'HH.mm.ss");
             String screenshotAbsolutePath = System.getProperty("screenshotDirectory") + File.separator + formatter.format(System.currentTimeMillis())
@@ -79,8 +64,6 @@ public class ScreenshotListener extends TestListenerAdapter {
             ex.printStackTrace();
         }
 
-
     }
-
 
 }

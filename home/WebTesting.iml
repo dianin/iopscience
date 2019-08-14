@@ -48,5 +48,15 @@
     <orderEntry type="library" name="Maven: org.rauschig:jarchivelib:1.0.0" level="project" />
     <orderEntry type="library" name="Maven: org.apache.commons:commons-compress:1.18" level="project" />
     <orderEntry type="library" name="Maven: org.jsoup:jsoup:1.11.3" level="project" />
+    <orderEntry type="library" name="Maven: org.aspectj:aspectjweaver:1.9.4" level="project" />
+    <orderEntry type="library" name="Maven: ru.yandex.qatools.allure:allure-testng-adaptor:1.5.4" level="project" />
+    <orderEntry type="library" name="Maven: ru.yandex.qatools.allure:allure-java-aspects:1.5.4" level="project" />
+    <orderEntry type="library" name="Maven: ru.yandex.qatools.allure:allure-java-adaptor-api:1.5.4" level="project" />
+    <orderEntry type="library" name="Maven: ru.yandex.qatools.allure:allure-java-annotations:1.5.4" level="project" />
+    <orderEntry type="library" name="Maven: ru.yandex.qatools.allure:allure-model:1.5.4" level="project" />
+    <orderEntry type="library" name="Maven: org.jvnet.jaxb2_commons:jaxb2-basics-runtime:0.9.3" level="project" />
+    <orderEntry type="library" name="Maven: ru.qatools.commons:properties:2.0.RC5" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.tika:tika-core:1.7" level="project" />
+    <orderEntry type="library" name="Maven: org.aspectj:aspectjrt:1.8.3" level="project" />
   </component>
 </module>
